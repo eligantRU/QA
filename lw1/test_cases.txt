@@ -1,0 +1,41 @@
+
+Unknown error
+
+a b c
+Unknown error
+
+1 2 a
+Unknown error
+
+1 2
+Unknown error
+
+1 4 2
+Not a triangle
+
+5 1 2
+Not a triangle
+
+5 1 0
+Not a triangle
+
+-3 1 5
+Not a triangle
+
+2 2 2
+Equilateral triangle
+
+9 9 9
+Equilateral triangle
+
+1 2 2
+Isosceles triangle
+
+5 1 5
+Isosceles triangle
+
+1 2 3
+Usual triangle
+
+7 8 15
+Usual triangle
