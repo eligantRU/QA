@@ -55,12 +55,15 @@ def make_report():
     report = {}
     while queue:
         url = queue.popleft()
+        if url[:7] == "mailto:" or url[:4] == "tel:":
+            continue
         if url in processed_urls:
             continue
         status, is_good, urls = get_hrefs(url)
         processed_urls.add(url)
-        queue.extend(list(set(filter(lambda filtering_url: BASE_URL in filtering_url, urls))))
         report[url] = status, is_good
+        if BASE_URL in url:
+            queue.extend(list(set(urls)))
     return report
 
 
